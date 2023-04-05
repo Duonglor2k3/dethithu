@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "name": "Ноутбукss",
+      "price": 1000,
+      "categoryName": "category1",
+      "id": 1
+    },
+    {
+      "name": "duong",
+      "price": 1111,
+      "categoryName": "dsada",
+      "id": 2
+    }
+  ]
+}

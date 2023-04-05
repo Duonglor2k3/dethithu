@@ -1,0 +1,28 @@
+<!-- •	 id: string - required
+•	 name: string - required
+•	 price: number - required
+•	 categoryName: string -->
+
+<!-- table hiện thị các cột trên và có ng-model -->
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Price</th>
+			<th>Category Name</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="product in products">
+			<td>{{product.id}}</td>
+			<td>{{product.name}}</td>
+			<td>{{product.price}}</td>
+			<td>{{product.categoryName}}</td>
+			<td>
+				<a ng-click="onEdit(product.id)">Edit</a>
+				<a ng-click="onDelete(product.id)">Delete</a>
+		</tr>
+	</tbody>
+</table>
